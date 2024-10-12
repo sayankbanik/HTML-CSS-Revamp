@@ -1,0 +1,7 @@
+position: relative;
+
+- elements fits in the normal flow but
+- top, right, bottom and left and z-index can be used to move the element from its default position or spot
+- **even if the document is offset but its original space in the document is maintained**
+- means, initial position of the element will not taken by any other element, it still belongs to that particular element only
+- top: 50px; it will move 50px from top so comes to bottom

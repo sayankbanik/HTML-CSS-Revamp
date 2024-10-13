@@ -5,3 +5,18 @@ position: relative;
 - **even if the document is offset but its original space in the document is maintained**
 - means, initial position of the element will not taken by any other element, it still belongs to that particular element only
 - top: 50px; it will move 50px from top so comes to bottom
+
+z-index
+
+- when there are multiple overlapping elements, higher z-index valued element will be visually on top.
+- default value; 
+  z-index: 0;
+- **only applied when the elements positioned other than default(static)**
+
+position: absolute;
+
+- Element is removed from the normal document flow and is now relative to its nearest parent element with an explicit position property
+- if no parent element has position property other than default (static), it is relative to the root
+- no space is left where it used to be, means that it will not have any space for it, so it can be overlapped on other element depends on the parent
+- when the parent has no position property, child element does not consider itself in the parent element only take root element as it's parent 
+  and behave like that (for example see the Hello there part in code)

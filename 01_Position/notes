@@ -20,3 +20,12 @@ position: absolute;
 - no space is left where it used to be, means that it will not have any space for it, so it can be overlapped on other element depends on the parent
 - when the parent has no position property, child element does not consider itself in the parent element only take root element as it's parent 
   and behave like that (for example see the Hello there part in code)
+
+
+position: fixed;
+
+- Element is removed from the normal document flow(like absolute)
+- Element is positioned relative to root container element
+- No space is left for that element where it used to be
+- when scroll the page, it will stay in place
+- top,right,left,bottom and z-index can be used to scoot the element relative to the root element

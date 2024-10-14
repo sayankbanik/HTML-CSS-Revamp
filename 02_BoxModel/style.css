@@ -1,0 +1,25 @@
+.box {
+  background-color: aqua;
+  width: 200px; /*content width*/
+  padding: 20px;
+  margin: 10px;
+  border: 2px solid blue;
+}
+.content-box {
+  /* background-color: #fff; */
+  /**
+  total width : 200(content-width) + border(4) + padding(40) = 244
+  width and height applied on the content
+  padding and border applied outside of the defined width and height
+  **/
+  box-sizing: content-box; /*default */
+}
+.border-box {
+  /* background-color: antiquewhite; */
+  box-sizing: border-box;
+  /*
+  total width : 156(content-width) + 40(padding)+ 4(border) = 200
+  width and height includes content with padding and border as well
+  to maintain defined width/height the size of content is adjusted
+  */
+}
